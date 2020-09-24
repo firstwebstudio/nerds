@@ -1,0 +1,330 @@
+.reg {
+  font-weight: 400;
+}
+.med {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+nav {
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+p {
+  font-weight: 400;
+  color: #283136;
+  font-size: 16px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 19px 63px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fb565a;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  width: 132px;
+  justify-content: center;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header {
+  background-color: #eeeeee;
+  min-height: 114px;
+  display: flex;
+  margin-bottom: 80px;
+}
+header nav {
+  display: inherit;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+header nav a {
+  font-weight: 500;
+  font-size: 16px;
+}
+header nav a:hover {
+  color: #fb565a;
+}
+header nav a:visited {
+  border-bottom: 2px solid #fb565a;
+}
+header nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+header nav .main-navigation__list {
+  font-weight: 500;
+  font-size: 16px;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  display: inherit;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+header nav .user-navigation__list {
+  font-weight: 500;
+  font-size: 16px;
+  width: 178px;
+  margin: 0;
+  padding: 0;
+  display: inherit;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+header nav .main-header__logo {
+  width: 160px;
+  height: 65px;
+  margin: 0;
+}
+header section#main-slider {
+  position: relative;
+  min-height: 433px;
+  width: 100%;
+  height: 437px;
+}
+header section#main-slider .main-slider__body {
+  width: 100%;
+  height: 437px;
+  position: absolute;
+  background-color: #eeeeee;
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 85% bottom;
+}
+header section#main-slider .main-slider__body .main-slider__wrapper {
+  margin-top: 46px;
+}
+header section#main-slider .main-slider__body .main-slider__wrapper h2 {
+  font-weight: 500;
+  font-size: 55px;
+  text-transform: none;
+  margin-bottom: 32px;
+  width: 380px;
+}
+header section#main-slider .main-slider__body .main-slider__wrapper p {
+  margin-bottom: 68px;
+}
+section#offers {
+  width: 100%;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 100px;
+}
+section#offers .offers__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+section#offers .offers__item {
+  width: 300px;
+}
+section#offers .offers__item img {
+  margin-bottom: 30px;
+}
+section#offers .offers__item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+section#offers .offers__item p {
+  margin-bottom: 39px;
+  width: 280px;
+}
+section#offers .offers__item a {
+  width: 41px;
+}
+section#offers .offers__item__btn_green {
+  background-color: #00ca74;
+}
+section#offers .offers__item__btn_yellow {
+  background-color: #efc84a;
+}
+.about__block__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+section#about {
+  margin-top: 80px;
+  width: 680px;
+}
+section#about h2 {
+  font-weight: 500;
+  font-size: 45px;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+section#about p {
+  margin-bottom: 50px;
+}
+section#about h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+section#about li {
+  position: relative;
+}
+section#about li:before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: -6%;
+  width: 25px;
+  height: 2px;
+  background: url("../img/line_about.png") no-repeat left center;
+}
+section#achievements {
+  width: 363px;
+  margin-top: 40px;
+}
+section#achievements .achievements__table {
+  margin-top: 36px;
+}
+section#achievements .achievements__table caption {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+section#achievements .achievements__table thead {
+  display: table-footer-group;
+  text-align: left;
+}
+section#achievements .achievements__table th {
+  font-weight: 400;
+  font-size: 16px;
+}
+section#achievements .achievements__table tbody {
+  font-weight: 700;
+  font-size: 45px;
+}
+section#achievements .achievements__table td {
+  width: 33%;
+  height: 74px;
+}
+section#achievements .achievements__table sup {
+  font-size: 28px;
+}
+section#partners {
+  width: 100%;
+  margin-bottom: 80px;
+}
+section#partners .partners__list {
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+section#partners img {
+  opacity: 0.1;
+}
+section#map {
+  width: 100%;
+  height: 416px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+section#map .map__image {
+  padding: 0;
+  margin: 0;
+}
+section#map .map__sticker {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 330px;
+  height: 290px;
+  box-sizing: border-box;
+  padding: 48px 36px;
+  background-color: #fff;
+  text-align: left;
+}
+section#map .map__sticker h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+section#map .map__sticker p {
+  font-weight: 400;
+  font-size: 16px;
+}
+section#map .map__sticker p:nth-child(3) {
+  margin-bottom: 37px;
+}
+section#map .map__sticker a {
+  justify-content: center;
+}
+section#map .map__marker {
+  position: absolute;
+  top: 22%;
+  right: 30%;
+}
+footer#main-footer {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+footer#main-footer .footer__social-list {
+  margin: 0;
+  padding-right: 139px;
+  display: flex;
+  justify-content: space-between;
+  width: 262px;
+}
+footer#main-footer .footer__social-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+footer#main-footer .footer__text {
+  width: 560px;
+}
+footer#main-footer .footer__text h3 {
+  text-transform: none;
+  font-size: 36px;
+}
