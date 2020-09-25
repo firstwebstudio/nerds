@@ -126,6 +126,19 @@ p{
   			display: inherit;
   			justify-content: flex-end;
   			margin-top: 32px;
+  			position:relative;
+
+
+				&:before {
+	  			content: "";
+	  			position:absolute;
+	  			top: 4%;
+	  			left: 41%;
+	  			width: 15px;
+	  			height: 15px;
+	  			opacity: 0.2;
+	  			background: url("../img/cart-icon.svg") no-repeat left center;
+  			}
   		}
 
   		.main-header__logo{
@@ -403,6 +416,14 @@ p{
 
   		a{
   			justify-content: center;
+  			&:hover{
+	  			background-color: #e74246;
+	  		}
+
+				&:active,		
+				&:focus{
+				 color: rgba(255, 255, 255, 0.3);
+				}
   		}
   	}
 
@@ -504,6 +525,10 @@ p{
 			padding: 14px 16px;
 			font-size: 16px;
 			.reg;
+
+			&:invalid{
+				border-color: red;
+			}
 
 			&:hover{
 				border-color: #b4b9bb;

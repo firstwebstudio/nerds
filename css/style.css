@@ -106,6 +106,17 @@ header nav .user-navigation__list {
   display: inherit;
   justify-content: flex-end;
   margin-top: 32px;
+  position: relative;
+}
+header nav .user-navigation__list:before {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 41%;
+  width: 15px;
+  height: 15px;
+  opacity: 0.2;
+  background: url("../img/cart-icon.svg") no-repeat left center;
 }
 header nav .main-header__logo {
   width: 160px;
@@ -332,6 +343,13 @@ section#map .map__sticker p:nth-child(3) {
 section#map .map__sticker a {
   justify-content: center;
 }
+section#map .map__sticker a:hover {
+  background-color: #e74246;
+}
+section#map .map__sticker a:active,
+section#map .map__sticker a:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
 section#map .map__marker {
   position: absolute;
   top: 22%;
@@ -409,6 +427,9 @@ footer#main-footer .footer__text h3 {
   padding: 14px 16px;
   font-size: 16px;
   font-weight: 400;
+}
+.modal__write-us input:invalid {
+  border-color: red;
 }
 .modal__write-us input:hover {
   border-color: #b4b9bb;
