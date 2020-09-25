@@ -125,7 +125,7 @@
 	<footer id="main-footer">
 		<ul class="footer__social-list">
 			<li class="footer__social-item">
-				<a href="">
+				<a href="#">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
 						<path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
 						c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
@@ -141,14 +141,14 @@
 				</a>
 			</li>
 			<li class="footer__social-item">
-				<a href="">
+				<a href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
   					<image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMAxFX0V3vYFH8Po9lbg4dPBLQUFiiggKDr4tzX9NaPGQNEiKkpIMp/gWnm1wxxNiKZwJjpCAxt0VCCac68VkemAqXYCzRXvsV0WzwG0hyHuqJye8L9RAZ85GU3/9H37hEmAFZHqOnjrsE+cAAAAASUVORK5CYII="/>
 					</svg>
 				</a>
 			</li>
 			<li class="footer__social-item">
-				<a href="">
+				<a href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
   					<image id="insta-icon" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAA8ElEQVQ4jcWVQQ6CQAxFW2OIYYUn0JVH0CtwSXaEA7CASxmQFa78ZpKSlGYGUDD+zUw7nTeldIAAxAAyAD3WqRdOTDLZUhm7E4joQNvp6aD4Encmok7Z7TDZr8ivY+bHYOjcdiugQf0NWhPRjYiOMtbib3XHjHbMtFIFgE08iz8oCz0BuCv76kvd+VWMi09GWRtoYu0A1MbtRoZnT6vml0Cdtb9l5tdUTV0G5Yc1LS3HB02Nr5IaJjLal5TOQiUgxzLlvicOQaMFYLceLYaqwFRq3Mh6I3bq6YhlULNp8vZpyE++p+70YkOgU7H9PwqI35K/QSTQVoILAAAAAElFTkSuQmCC"/>
 					</svg>
@@ -163,24 +163,26 @@
 	</footer>
 	</div>
 
-	<section id="modal" class="visually-hidden">
+	<section class="modal modal__write-us">
 		<h2>Напишите нам</h2>
 		<form class="modal__form" action="" method="post">
-			<p>
-				<label for="form__name">Ваше имя:</label>
-				<input type="text" id="form__name" placeholder="Представьтесь, пожалуйста">
-			</p>
-			<p>
-				<label for="form__email">Ваш e-mail:</label>
-				<input type="text" id="form__email" placeholder="Для отправки ответа">
-			</p>
+			<div class="modal__form__row">
+				<p>
+					<label for="form__name">Ваше имя:</label>
+					<input type="text" id="form__name" placeholder="Представьтесь, пожалуйста">
+				</p>
+				<p>
+					<label for="form__email">Ваш e-mail:</label>
+					<input type="text" id="form__email" placeholder="Для отправки ответа">
+				</p>
+			</div>
 			<p>
 				<label for="form__text">Текст письма:</label>
-				<input type="text" id="form__text" placeholder="Для отправки ответа">
+				<input type="text" id="form__text" placeholder="В свободной форме">
 			</p>
 			<button class="btn" type="submit">Отправить</button>			
 		</form>
-		<button class="modal__close" type="button">Закрыть</button>
+		<button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
 </body>
 </html>
