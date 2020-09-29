@@ -80,17 +80,21 @@ p{
  	}
 
 //ГОЛОВНОЙ БЛОК
-  header{
+	header{
   	background-color: #eeeeee;
   	min-height: 114px;
   	display: flex;
   	margin-bottom: 80px;
-  	
+  	position:sticky;
+  	  	
   	nav{
+  		top:0;
   		display: inherit;
   		width: 100%;
   		justify-content:space-between;
   		margin-top: 50px;
+  		
+  		
 
   		a{
   			.med;
@@ -99,7 +103,7 @@ p{
 	  		&:hover {
 	  			color: #fb565a;
 	  		}
-	  		&:visited {
+	  		&:target {
 	  			border-bottom: 2px solid #fb565a;
 	  		}
 	  		&:active {
@@ -488,10 +492,6 @@ p{
 		position:fixed;
 	}
 
-	.modal__open{
-
-	}
-
 	.modal__write-us{
 		display:none;
 		width: 960px;
@@ -623,4 +623,8 @@ p{
         opacity: 0.1;
       }
 		}
+	}
+
+	.modal__open{
+		display: block;
 	}

@@ -67,8 +67,10 @@ header {
   min-height: 114px;
   display: flex;
   margin-bottom: 80px;
+  position: sticky;
 }
 header nav {
+  top: 0;
   display: inherit;
   width: 100%;
   justify-content: space-between;
@@ -81,7 +83,7 @@ header nav a {
 header nav a:hover {
   color: #fb565a;
 }
-header nav a:visited {
+header nav a:target {
   border-bottom: 2px solid #fb565a;
 }
 header nav a:active {
@@ -510,4 +512,7 @@ footer#main-footer .footer__text h3 {
 }
 .modal__write-us .modal__close:active {
   opacity: 0.1;
+}
+.modal__open {
+  display: block;
 }
